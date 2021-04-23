@@ -1,0 +1,91 @@
+body {
+  background: #0f75a8;
+}
+.grid-1 div {
+  padding: 20px;
+}
+.grid-1 {
+  display: grid;
+}
+@media (min-width: 300px) {
+  .grid-1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(2, 4fr) repeat(2, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "navBar navBar navBar navBar"
+      "main main main main"
+      "main main main main"
+      "banner banner banner banner"
+      "footer footer footer footer";
+  }
+  .menu {
+    grid-area: menu;
+    background-color: grey;
+  }
+  .header {
+    grid-area: header;
+    background-color: chartreuse;
+  }
+  .navBar {
+    grid-area: navBar;
+    background-color: firebrick;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: crimson;
+  }
+  .banner {
+    grid-area: banner;
+    background-color: khaki;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: lightgreen;
+  }
+  .menu {
+    display: none;
+  }
+  .infos {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 40px repeat(2, 4fr) 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "navBar navBar navBar navBar"
+      "menu main main infos"
+      "menu main main infos"
+      "menu banner banner infos"
+      "menu footer footer footer";
+  }
+  .menu {
+    grid-area: menu;
+    background-color: grey;
+  }
+  .header {
+    grid-area: header;
+    background-color: chartreuse;
+  }
+  .navBar {
+    grid-area: navBar;
+    background-color: firebrick;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: chartreuse;
+  }
+  .banner {
+    grid-area: banner;
+    background-color: khaki;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: lightgreen;
+  }
+}
