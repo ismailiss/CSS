@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<header></header>
+
+<body>
+    <div class="bottom">
+        <div class="cup">
+            <div class="cupHolder"></div>
+            <div class="liquid"></div>
+            <div class="liquidInsider"></div>
+        </div>
+        <div class="spoon"></div>
+        <div class="spoonHeader"></div>
+
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: cornsilk;
+        top: 30%;
+        border-radius: 50%;
+        box-shadow: -2px 15px 26px 14px black;
+    }
+
+    .cup {
+        position: relative;
+        background: burlywood;
+        height: 170px;
+        width: 172px;
+        top: 30px;
+        left: 30px;
+        border-radius: 50%;
+    }
+
+    .cupHolder {
+        content: "";
+        position: absolute;
+        background: cornsilk;
+        height: 31px;
+        width: 21px;
+        top: 127px;
+        left: 49px;
+        border-radius: 50% 50% 0% 0%;
+        z-index: 3;
+        transform: rotate(-156deg);
+        box-shadow: 2px -11px 8px 3px black;
+    }
+
+
+
+    .liquid {
+        position: absolute;
+        background: peru;
+        border: 7px solid cornsilk;
+        height: 110px;
+        width: 110px;
+        top: 10px;
+        left: 28px;
+        border-radius: 50%;
+        box-shadow: -1px 6px 15px 9px black;
+    }
+
+    .liquidInsider {
+        content: "";
+        position: absolute;
+        background: cornsilk;
+        height: 31px;
+        width: 13px;
+        top: 42px;
+        left: 91px;
+        border-radius: 42% 50% 44% 60%;
+        box-shadow: 0px 0px 4px 0px honeydew;
+        z-index: 3;
+    }
+
+
+    .spoon {
+        position: absolute;
+        top: 100px;
+        left: 220px;
+        width: 20px;
+        height: 170px;
+        background: gray;
+        box-shadow: -1px 8px 10px 6px black;
+        transform: rotate(25deg);
+    }
+
+    .spoonHeader {
+        content: "";
+        position: absolute;
+        background: gray;
+        height: 94px;
+        width: 61px;
+        top: -69px;
+        left: -20px;
+        border-radius: 50% 50% 50% 50%;
+        z-index: 3;
+        transform: rotate(0deg);
+        box-shadow: -3px 0px 6px 4px black;
+    }
+
+    p {
+        position: absolute;
+        top: -120px;
+    }
+</style>
+
+</html>
